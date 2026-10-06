@@ -1,0 +1,40 @@
+# Ignore everything by default
+*
+
+# Allow directories to be tracked (so we can access subdirectories)
+!*/
+
+# Allow .gitignore file itself
+!.gitignore
+
+# Allow README files
+!README*
+!readme*
+
+# Allow STAT 151A lecture note PDFs in Notes folder
+!Notes/
+Notes/*
+!Notes/*.pdf
+Notes/*.pdf
+!Notes/*.pdf
+
+# Explicitly ignore other file types in Notes folder
+Notes/*.tex
+Notes/*.bbl
+Notes/*.synctex.gz
+Notes/*.unq
+Notes/*.sty
+
+# Ignore other files in root directory
+*.tex
+*.bbl
+*.synctex.gz
+*.unq
+*.sty
+*.pdf
+!Notes/*.pdf
+!STATS 201A Fa26 Syllabus.pdf
+
+# Ignore Lab folder contents
+Lab/
+.Rproj.user
